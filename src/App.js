@@ -18,11 +18,7 @@ function App() {
         ></a-entity>
         <a-sky color="#ECECEC"></a-sky>
         <a-entity id="rig" position="0 0 0">
-          <a-entity
-            id="camera"
-            camera="fov:  81;  near:  0.465"
-            look-controls
-          ></a-entity>
+          <a-entity id="camera" camera></a-entity>
         </a-entity>
       </a-scene>
     </div>
