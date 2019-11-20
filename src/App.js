@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import hautemodel from "./modeles/hautetght.gltf";
 
 import "./App.css";
 
@@ -8,17 +9,20 @@ function App() {
     <div className="App">
       <a-scene>
         <a-assets>
-          <a-asset-item id="tube" src=""></a-asset-item>
           <video
             id="blue"
             autoplay
             loop="true"
-            src="/blue.mp4"
+            src="https://res.cloudinary.com/dfzrepi27/video/upload/v1574260051/blue_ra7q4p.mov"
             autoplay
           ></video>
         </a-assets>
 
-        <a-videosphere src="blue.mp4"></a-videosphere>
+        <a-videosphere
+          src="https://res.cloudinary.com/dfzrepi27/video/upload/v1574260051/blue_ra7q4p.mov"
+          scale="0.005 0.005 0.005"
+        ></a-videosphere>
+        <a-light type="ambient" color="#222" intensity="10"></a-light>
         <a-entity id="rig" position="0 0 0">
           <a-camera fov="30"></a-camera>
         </a-entity>
